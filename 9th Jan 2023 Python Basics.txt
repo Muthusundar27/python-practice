@@ -1,0 +1,1145 @@
+
+
+
+
+
+					   WelCome To Python !
+
+                          
+
+
+				Course Content - 
+
+
+                                Course Duration -  3  days 
+
+						    2 hr        BR            1.5 hr
+						2.00 - 4.00     30 mins   4.30 - 5.30
+
+                                Participants Pre-requisites- basic programming
+                                                                                                Basic Programming
+
+
+
+
+ TOPICS:
+
+  Introduction
+  Discovery,Version,Python Flavour,
+  Words About Python
+  What is Python
+  Pyhton setup
+  Python DataType
+  Control Flow
+  Operator Example
+  Commandline Argument
+  UserInput in Python
+
+  
+  OOPs-Python-Class and Object
+       -Constructor.self,cls
+       -Types Of Variable
+       -Types Of Method
+       -Inner class
+       -Accessor and Mutator
+       -HandsOn
+
+
+
+	 Introduction
+         Discovery,Version
+
+				//Introduction
+
+
+		   1.  High-level Language - human readable - ex python
+		       low-level Language - not human readable - ex AL 
+
+		   2.  Object Oriented Programming language.
+				OBJECT 
+							attribute        action
+					penObj          color = ?        write
+							cost = ?
+
+		   3. It is  a Scripting language.(Spripting language do not required
+						compilation steps)
+
+				ex python , java scipt
+
+
+				till java 8      compilation                run 
+				     hello.java   =>          hello.class   =>   MC/NC
+
+						javac                     java
+
+
+				python 
+				     hello.py         =>           MC/NC
+					
+						python hello.py
+
+			4. Python Code  Use Of ; is optional
+
+
+				Hello.py
+				   print("HelloWorld")
+
+
+				Hello.java 
+				   class Hello{
+					public static void main(String args[]){
+						System.out.println("HelloWorld");
+					}
+				   }
+
+
+			5. Java and python
+
+
+			Core Java(Programming)        Advanced Java (Web Application)
+							servlet , jsp , spring ,..
+
+			Python Basic(Programming)    Advanced Python (Web Application)
+							django , flask
+
+						     IOT , Data Scientists , Data Analyst
+							Data Engineer
+
+			6. Python Version
+
+				Python 2.x      Python 3.x 
+				 140000         80000
+
+
+
+
+
+		//Buzz Words python
+
+			Simple  To  Use
+			Object  Oriented Programming Language
+			Dynamically Typed Language
+			Platform Independent 
+			Distributed
+			Scripting Language
+			Readability
+			Community
+
+		//Simple  To  Use
+
+
+		//Object  Oriented Programming Language
+
+			CLASS 
+
+			OBJECT
+
+		//Dynamically Typed Language
+			- data type decided automatically based on input.
+
+			//python                            //java
+			color = 'red'  // string             char   a = 'v' ;      
+		        name = "srini"		             String  h = "hello";
+			height = 20    //int                 int  b = 30;
+			
+
+
+		//Platform Independent 
+
+			PDK = Python Developement Kit
+			PDK is OS dependent.
+
+
+			windows       linux         mac
+
+			PDK - w       pdk - l       pdk - m
+
+
+					     compilation       run
+				source code    =>   byte code  =>  mc/nc
+    				Hello.py            Hello.pyc     
+
+			/>python Hello.py
+
+
+		//distributed
+			-  remotely call some function.
+
+
+		//Python Setup
+			https://www.python.org/downloads/windows/
+
+
+1st  Method: - installation required
+	1.  python-3.7.3-amd64.exe
+		C:\Users\A687640\AppData\Local\Programs\Python\Python37
+
+	2.  PATH:  Command Prompt
+                set path= C:\Users\AppData\Local\Programs\Python\Python37\Scripts
+                set path= C:\Users\AppData\Local\Programs\Python\Python37			    
+	3.   /> python --version
+                      4.   /> python Hello.py  
+
+
+2nd Method:  IDLE  - installation required
+
+
+3rd  Method:  IDE  -  installation required
+
+
+4th  Method :   Google Colab - no installation required
+
+			-----------------------------------
+			                    compilation       run
+				source code    =>   byte code  =>  mc/nc
+    				Hello.py            Hello.pyc     
+			
+			//hello.py
+
+			/>python hello.py   
+
+
+			//python         //java till java8
+			module           package 
+			py_compile       java.sql.*,java.util.*
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+			-----------------------------------
+			NEXT :
+
+				Hands On:
+
+				Write a Program that accepts four Strings as command line 
+				arguments and generate the  output in a specific way as given below.
+				
+				Example:
+				If the four command line arguments are ABC  , GLOBAL , Ltd 
+				and Bangalore then the output generated should be   
+				ABC GLOBAL Ltd Bangalore.
+
+				/> python  Hello.py ABC GLOBAL Ltd Bangalore
+
+
+      //CommandLineDemo.py
+
+	class   CommandLineDemo:                         
+		def  __init__(self):
+	        	print("welcome")
+
+	obj= CommandLineDemo();
+
+
+
+      //CommandLineDemo.java
+
+	 class CommandLineDemo{
+		CommandLineDemo(){
+
+		}
+		public static void main(String args[]){
+			CommandLineDemo obj = new CommandLineDemo();
+		}
+	 }   
+	                    
+
+  NEXT :
+
+  Python DataType
+  Control Flow
+  Operator Example
+  Commandline Argument
+  UserInput in Python
+
+  
+  OOPs-Python-Class and Object
+       -Constructor.self,cls
+       -Types Of Variable
+       -Types Of Method
+       -Inner class
+       -Accessor and Mutator
+       -HandsOn
+		
+
+
+			//Python DataType
+
+			in java - 8 datatypes - primitive - not object
+			in python - all data type are object.
+				  - all variable in python is object
+				  - two types of object
+					mutable object -list , dic , set , byte array
+					immutable object - int float , complex, str
+				  - all object in python is used to represent using 
+					unique number. 
+
+
+Text Type:	           str
+Numeric Types:	int, float, complex
+Sequence Types:	list, tuple, range
+Mapping Type:	dict
+Set Types:	            set, frozenset
+Boolean Type:	bool
+Binary Types:	bytes, byte array, memory view
+
+
+
+			//Control Flow
+
+			Selection Statement  
+				(if else switch)
+
+class   SelectionControlDemo:
+    def  method1(self):
+        x  =  7
+        y  =  6
+        if x < y:
+            print("x less than y")
+        elif x > y:
+            print("x greater than y")
+        elif  x == y:
+            print("x equals to y")
+        else:
+            print("none of the above")
+			
+obj =  SelectionControlDemo()
+obj.method1()
+
+			Iterative statement  
+				(for , while , do while)
+ def method2(self):
+        for  x  in  range(0,10):
+            print(x)
+
+
+
+			//UserInput in Python
+
+
+		class  EmployeeDetails:
+			def  __init__(self):
+				self.empId = input("Enter Your empId")  // instance var
+				self.empName = input("Enter Your empName")
+				self.empEmail = input("Enter Your empEmail")
+
+			def  method1(self):
+				print(self.empId)
+				print(self.empName)
+				print(self.empEmail)
+		
+		obj=EmployeeDetails()
+
+
+   ------------------------------------------------------------
+   What we have done last day ?
+	
+   TOPICS:
+				
+   OOPs-Python-Class and Object
+       -Constructor,self,cls
+       -Types Of Variable
+       -Types Of Method
+       -HandsOn
+
+    OOPs - Data Hiding
+    OOPs-OBJECT RELATIONSHIP
+        Python-Inheritance
+	MRO
+	super()
+       -Hands On
+	
+    Disadvantage Of Using Python 
+    OOPs - Abstraction
+    OOPs - Polymorphism  
+    OOPs – Encapsulation
+
+
+    Python  Data Structure:
+	List  
+	Tuple  
+	Dictionary 
+	Set  
+	Frozen Set 
+
+    Case Study Project
+
+
+
+
+			// OOPs-Python-Class and Object
+
+
+			CLASS - blue print of an object
+			OBJECT - object have attribute and action
+				
+			Contructor:
+				- __init__  is used to define as constructor.
+				- two types of constructor
+					__init__(self) - default constructor
+					__init__(self,color,cost) - para __init__(self,color,cost)
+				- constructor name is not same as class name.
+				- constructor is used to initialize object instance variable
+				  value.
+				- we can have multiple constructor inside the class ,
+				  but only the current constrcutor will be executed by PVM.
+
+
+			constructor and method:
+			- method can have any name , but constructor have pre-defined name.
+
+			self
+			- it is used to define current object attribute.
+			- it is a implicit variable inside a constructor.
+			- As per python api spec , we should use self
+			- self must be the first argument inside the constructor or method
+			- self is used inside the class only.
+
+
+			class  Pen:
+				def  __init__(self,col,cst):
+					self.color=col        //instance var
+					self.cost=cst
+
+				def   write(self):   //instance method
+					print("color value"+self.color)
+					print("cost value"+str(self.cost))
+
+			pobj1 = Pen('red',23.00)  // color=red  , cost = 23.00
+			pobj1.write()
+
+			
+			pobj2 = Pen('yellow',200.00) //color=yellow , cost=200.00
+			pobj2.write()
+
+
+			//variable in Python
+			-  3 types of variable in Python
+			
+				A. instance variable 
+					- varaible created inside the constrcutor usinf self.
+					- scope is the complete class 
+				B. Local Variable
+					- variable declared inside a method without using self.
+					- scope inside the method only 
+				C. static variable.
+					- any variable created inside a class 
+					- it is used to call without creating an object of the class.
+					- static variable value can be shared by multiple object.
+
+			class  Account:
+				a = 10   //static or class variable
+
+				def  __init__(self):  
+					self.d = 30  //instance variable
+					print('default constructor'+str(self.d))
+
+				def  deleteAcc(self):
+`					c = 20      //Local Variable
+					print('local var'+str(c))
+
+
+
+		//static variable value can be shared by multiple object.
+
+
+		class  Employee:
+			aa = 10
+
+			def  method1(self):
+				Employee.aa = Employee.aa + 1
+
+			def  printdemo(self):
+				print(Employee.aa)
+
+		obj = Employee()  // aa=10                        aa=10   aa=11     obj
+		obj.method1();    // aa= 11
+		obj.printdemo();  // aa= 11
+
+		obj1 = Employee()  // aa=11			  aa=11   aa= 12    obj1
+		obj1.method1();    // aa=12 
+		obj1.printdemo();  // aa=12 
+
+
+
+			//Types Of Method
+
+			- 3 Types of method
+				A. instance method
+					- the method where we are dealing with instance 
+					varaible is called instance method.
+					- it is used to work with object data.
+				B. class method
+					- always deal with class level data
+					- for every class PVM will create one class object.  ie cls
+					- cls is used to hold class level info.
+					- use of @classmethod is optional
+
+				C. static method
+					- any method neither deal with class level data nor deal with
+			  		object related data.
+					- are mostly utility method.
+					- it can be called using class name.
+					- use of @staticmethod is optional
+
+
+
+
+			// instance method
+
+			class  Pen:
+				def  __init__(self,col,cst):
+					self.color=col        //instance var
+					self.cost=cst
+
+				def   write(self):   //instance method
+					print("color value"+self.color)
+					print("cost value"+str(self.cost))
+
+			pobj1 = Pen('red',23.00)  // color=red  , cost = 23.00
+			pobj1.write()
+
+
+
+			// class method
+			
+
+			//static method  
+			
+
+class  Product:
+    pname ="eletronics"
+    
+    @classmethod
+    def  getProductDetails(cls):
+        print("The product name is "+cls.pname)
+        
+    @staticmethod
+    def method():
+        print("this is static method")
+
+        
+obj=Product()
+obj.getProductDetails()
+
+Product.method()
+
+
+			//Hands on:
+				CLASS NAME :   Clothing
+				Attribute  :   int id;  int size;  float price; color string 
+		 				- Constructor
+				Method Name :  display()
+
+				Create one object using Parameterized Constructor,
+ 				Print each attribute value with display().
+
+
+    NEXT :
+
+    
+    OOPs-OBJECT RELATIONSHIP
+        Python-Inheritance
+	MRO
+	super()
+       -Hands On
+	
+    Disadvantage Of Using Python 
+    OOPs - Abstraction
+    OOPs - Polymorphism  
+    OOPs – Encapsulation
+
+
+			//OOPS -inheritance
+
+		Object Relationship :
+
+			relationship name = have 
+			cardinality  = 1: 1 , 1:m , M : N , M : 1
+			HAS  A  ,   IS A
+
+			//HAS A
+			one Order(Object)    have  many   items(object) 
+
+
+			//IS  A
+			CurrentAccount  is   a    Account
+
+		OOPS - IS A - inheritance
+			    - reusability of code
+			    - extention of functionality
+
+
+		      Types Of Inheritance:
+			     A. Simple Inheritance 
+
+				class    Shape:
+					def   area(self):
+						print("This is area method")
+					
+				class    Circle(Shape):
+					def   area1(self):
+					        print("This is area of circle")
+
+				 obj = Circle()
+				 obj.area()
+				 obj.area1()
+
+
+			      B. Multi level Inheritance
+
+				class    Shape:
+					def   area(self):
+						print("This is area method")
+
+				class    Circle(Shape):
+					def   area1(self):
+					        print("This is area of circle")
+
+				class    QLine(Circle):
+					def   area2(self):
+					        print("This is area of QLine")
+				 obj = QLine()
+				 obj.area()
+				 obj.area1()
+				 obj.area2()
+
+			    C. Hierarchical Inheritance
+
+				class    Shape:
+					def   area(self):
+						print("This is area method")
+
+				class    Circle(Shape):
+					def   area1(self):
+					        print("This is area of circle")
+
+				class    Rect(Shape):
+					def   area2(self):
+					        print("This is area of rect")
+				obj = Circle()
+				obj.area()
+				obj.area1()
+				obj1 = Rect()
+				obj1.area()
+				obj1.area2()
+
+			D.Multiple Inheritance
+
+				class     AA:
+					def    m1(self):
+					       print("This is m1() method of class AA")
+
+				class    BB:
+					def   m1(self):
+					       print("This is m1() method of class BB")
+
+				class    EE:
+					def   m1(self):
+					       print("This is m1() method of class EE")
+
+
+				class   CC(AA,BB,EE):
+					def   m3(self):
+					       print("This is m3() method of class  CC")
+
+				class DD(CC):
+				        def  m1(self):
+					      EE.m1(self)
+						
+
+				obj = CC()
+				obj.m1()
+
+
+
+		//super()
+			- it is used to call base class constructor.
+			- reusability
+
+
+class     AA:
+    def  __init__(self,a,b):
+        self.x=a
+        self.y=b
+        print(self.x,"/",self.y)
+        
+class   BB(AA):
+    def   __init__(self,a,b,c):
+        #self.x=a
+        #self.y=b
+        super().__init__(a,b)
+        self.z=c
+        print(self.x,"/",self.y,"/",self.z)
+
+
+obj = BB(20,30,40)   # create an object of BB class
+
+
+
+
+		Hands On :(Using super())
+			base class : Clothing
+				     instance var : id , price , size , color
+			derived class : Shirt
+				     instance var : fit
+			derived class : Trouser
+				     instance var : fit , gender
+
+			1.Create 3 Shirt object using Shirt parameterized constructor 
+			  and print all the attribute.
+			2.Create 3 Trousers object using Trousers parameterized constructor 
+			 and print all the attribute.
+
+
+    -----------------------------------------------------
+    what we have done last day ?
+    NEXT :
+    Disadvantage Of Using Python 
+    OOPs - Data Hiding
+    OOPs - Abstraction
+    OOPs - Polymorphism  
+    OOPs – Encapsulation
+
+    Python  Data Structure:
+	List  
+	Tuple  
+	Dictionary 
+	Set  
+	Frozen Set 
+
+    Case Study Project
+    Perform a service request data analysis of New York City 311 calls. 
+    You will focus on the data wrangling techniques to understand the pattern
+    in the data and also visualize the major complaint types. 
+	Import a 311 NYC service request
+	Basic data exploratory analysis 
+	Explore data
+	Find patterns
+	Display the complaint type and city together
+	Find major complaint types
+	Find the top 10 complaint types 
+	Plot a bar graph of count vs. complaint types
+	Visualize the complaint types
+	Display the major complaint types and their count
+
+
+
+			//Disadvantage Of Using Python 
+
+
+    OOPs - Data Hiding
+    OOPs - Abstraction
+    OOPs - Polymorphism  
+    OOPs – Encapsulation
+
+		       //  OOPs - Data Hiding
+
+				A. data member       __color      private variable
+        				private data members are not available outside 
+                                        the class
+ 
+        			B. method           __m1(self)
+
+
+                      //  OOPs - Abstraction
+                               - expose the function to customer
+                               - Abstraction is implemented using abstract class.
+                               - python does not provide abstract class by default
+                               - use of @abstractmethod is optional
+
+             
+                     ABC  = Abstract Base Class
+
+                         from abc import ABC
+                         class   Shape(ABC):
+                              @abstractmethod
+			      def area(self):
+				  return
+
+
+
+                         class  Circle(Shape):
+			      def area(self):
+				  print('this is circle area')
+
+
+                         class Rect(Shape):
+			     def area(self):
+				  print('this is rect area')
+
+
+                         obj = Circle()
+                         obj.area()
+
+
+		//OOPs - Polymorphism
+                       - same function do different task
+                       - two types of Polymorphism
+                              A. function overloading/compiletime 
+                              B. function override/runtime 
+
+
+                        Navin(CEO)            Maria(Student)
+                          p                     p
+                          b                     s
+                          d                     t
+                          c                     f
+                          m                     n
+                          n                
+ 
+
+
+                  // A. function overloading/compiletime 
+                         - python is dyanamically typed language.
+                         - python does not support  function overloading
+               
+                        class  Pen:
+				def  __init__(self,col):
+					self.color=col        
+
+				def  __init__(self,col,cst):
+					self.color=col        
+					self.cost=cst
+
+				def   write(self,color,cost):   
+					print("color value"+self.color)
+					print("cost value"+str(self.cost))
+
+				def   write(self,color):   
+					print("color value"+self.color)
+					print("cost value"+str(self.cost))
+
+			pobj1 = Pen()  
+			pobj1.write("red",12.00)
+			pobj1.write("yellow")
+
+
+             
+		  //B. function override/runtime Polymorphism
+                           - inheritance
+                           - same function signature in the base class and derived class
+                           - derived class method is overriden from base class method
+                             with its own code. 
+                           - calling derived class method using derived class object is
+                             decided during runtime.
+
+
+			 from abc import ABC
+                         class   Shape(ABC):
+                              @abstractmethod
+			      def area(self):
+				  return
+
+                         class  Circle(Shape):
+			      def area(self):
+				  print('this is circle area')
+
+
+                         class Rect(Shape):
+			     def area(self):
+				  print('this is rect area')
+
+
+                         obj = Circle()
+                         obj.area()
+                       
+
+
+	//Python  Data Structure:
+	List  
+	Tuple  
+	Dictionary 
+	Set  
+	Frozen Set 
+
+
+
+         //List 
+               - ordered , non unique
+               - it can increase and decrease size dynamically.
+               - mutable
+
+
+mylist = []
+print(mylist)
+
+mylist.append(111)
+print(mylist)
+mylist.append(222)
+print(mylist)
+mylist.append(333)
+print(mylist)
+mylist.append(444)
+print(mylist)
+print(mylist[0])
+mylist[3]=888
+mylist.append(111)
+print(mylist)
+
+#sort
+mylist.sort()
+print(mylist)
+
+#sort
+mylist.sort(reverse=True)
+print(mylist)
+
+#count
+c = mylist.count(111)
+print(c)
+
+#remove
+mylist.remove(222)
+print(mylist)
+
+#remove
+mylist.remove(888)
+print(mylist)
+
+
+               //Tuple 
+                    - immutable - once created , can not be changed.
+                    - fixed size in nature.
+                    - faster than list
+                    - protect data form being changed
+
+
+			tp1  =  (33,77,44,33)
+                        print(tp1)
+
+
+tp1  =  (33,77,44,33)
+print(tp1)
+
+#tp1[0] = 3000
+#print(tp1)
+
+tp2 = ('python','jython','mython')
+tp3 = ('ms','django','flask')
+
+#concatenation
+tp4=(tp2+tp3)
+print(tp4)
+
+#nesting
+tp5=(tp2,tp3)
+print(tp5)
+
+print(len(tp2))
+
+del tp5
+
+print(tp4)
+#print(tp4[3:])
+
+print(tp4[::-1])
+
+print(tp4[2:4])
+
+
+
+
+    next :
+	Dictionary 
+	Set  
+	Frozen Set 
+
+   
+
+		//Dictionary 
+			- key and value pair.
+                        - key must be unique
+                        - when duplicate keys are encountered during 
+                           assignment the last assignment override
+                           the previous assignment.
+                        - mutable object.
+
+
+
+
+                     dic  =  { 
+				    1 : "one",
+				    2 : "two",
+				    3 : "three",
+            			    4 : "hello"
+				   }
+print(dic)
+print(dic[3])
+
+#update
+dic[4] = 'laptop'
+print(dic)
+
+#add
+dic[5] = 'idcard'
+print(dic)
+
+#only keys
+print(dic.keys())
+
+#only values
+print(dic.values())
+
+			//set 
+                             - unordered  and unique
+                             - it is a mutable object.
+
+
+mObj={11, 23 , 56 , 89 , 89 , 89}
+print(mObj)
+
+mObj1={11, 23 , 500 , 400 , 300, 200}
+print(mObj1)
+
+#difference
+diff= mObj.difference(mObj1)
+print(diff)
+
+#difference
+diff= mObj1.difference(mObj)
+print(diff)
+
+#intersection
+
+inter = mObj.intersection(mObj1)
+print(inter)
+
+
+		//Frozen Set 
+                       - unordered  and unique
+                       - immutable
+
+
+			v  = ('a','e','i','o','u')   //tuple
+                       fset = frozenset(v)
+                       print(fest)
+
+                        tuple > Frozen Set
+                        list > Frozen Set
+                        dic > Frozen Set
+
+
+
+    pandas , matplotlip
+
+
+    Case Study Project
+    Perform a service request data analysis of New York City 311 calls. 
+    You will focus on the data wrangling techniques to understand the pattern
+    in the data and also visualize the major complaint types. 
+	Import a 311 NYC service request
+	Basic data exploratory analysis 
+	Explore data
+	Find patterns
+	Display the complaint type and city together
+	Find major complaint types
+	Find the top 10 complaint types 
+	Plot a bar graph of count vs. complaint types
+	Visualize the complaint types
+	Display the major complaint types and their count
+
+
+
+                       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
